@@ -25,11 +25,11 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             {
                 if(currentCSVLine.length() != 0)
                 {
-                    CrimData row(currentCSVLine);
+                    CrimeData row(currentCSVLine);
                     crimeVector.push_back(row);
                 }
             }
-            rowCount++
+            rowCount++;
         }
         dataFile.close();
     }

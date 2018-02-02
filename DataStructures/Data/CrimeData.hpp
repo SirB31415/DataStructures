@@ -12,6 +12,7 @@
 #include <string>
 #include <cmath>    
 #include <sstream> //String as stream
+#include "../Model/Structures/Array.hpp"
 
 using namespace std;
 

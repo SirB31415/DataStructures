@@ -34,7 +34,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 template <class Type>
 Array<Type> :: Array(int size)
 {
@@ -78,7 +78,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     }
     return *this;
 }
-tempate <class Type>
+template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
