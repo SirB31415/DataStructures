@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAF801412024E79000F5C7C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801402024E79000F5C7C5 /* main.cpp */; };
 		FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801472024E7A900F5C7C5 /* Controller.cpp */; };
 		FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */; };
 		FAF801532024EDFA00F5C7C5 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801512024EDFA00F5C7C5 /* Timer.cpp */; };
@@ -28,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		FAF8013D2024E79000F5C7C5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF801402024E79000F5C7C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FAF801472024E7A900F5C7C5 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		FAF801482024E7A900F5C7C5 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
@@ -38,6 +36,7 @@
 		FAF801552024F26500F5C7C5 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		FAF801562024F26500F5C7C5 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		FAF801572024F26500F5C7C5 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		FAF8015C2024F7B000F5C7C5 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +69,8 @@
 		FAF8013F2024E79000F5C7C5 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				FAF801592024F78B00F5C7C5 /* Model */,
 				FAF801542024F1F500F5C7C5 /* Data */,
-				FAF801402024E79000F5C7C5 /* main.cpp */,
 				FAF8014D2024E9A000F5C7C5 /* Tools */,
 			);
 			path = DataStructures;
@@ -98,6 +97,22 @@
 				FAF801572024F26500F5C7C5 /* CrimeData.hpp */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FAF801592024F78B00F5C7C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8015A2024F79500F5C7C5 /* Structures */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAF8015A2024F79500F5C7C5 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8015C2024F7B000F5C7C5 /* Array.hpp */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF801412024E79000F5C7C5 /* main.cpp in Sources */,
 				FAF801582024F26600F5C7C5 /* CrimeData.cpp in Sources */,
 				FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */,
 				FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */,
