@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FAF801412024E79000F5C7C5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801402024E79000F5C7C5 /* main.cpp */; };
+		FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801472024E7A900F5C7C5 /* Controller.cpp */; };
+		FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		FAF8013D2024E79000F5C7C5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF801402024E79000F5C7C5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FAF801472024E7A900F5C7C5 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		FAF801482024E7A900F5C7C5 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		FAF8014F2024EB1F00F5C7C5 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,20 @@
 			isa = PBXGroup;
 			children = (
 				FAF801402024E79000F5C7C5 /* main.cpp */,
+				FAF8014D2024E9A000F5C7C5 /* Tools */,
 			);
 			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		FAF8014D2024E9A000F5C7C5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FAF801472024E7A900F5C7C5 /* Controller.cpp */,
+				FAF801482024E7A900F5C7C5 /* Controller.hpp */,
+				FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */,
+				FAF8014F2024EB1F00F5C7C5 /* FileController.hpp */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF801412024E79000F5C7C5 /* main.cpp in Sources */,
+				FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */,
+				FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
