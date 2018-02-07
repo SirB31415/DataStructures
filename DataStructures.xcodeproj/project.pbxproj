@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA30B012202A339F00EC934F /* ArrayTester.cpp */; };
 		FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801472024E7A900F5C7C5 /* Controller.cpp */; };
 		FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */; };
 		FAF801532024EDFA00F5C7C5 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801512024EDFA00F5C7C5 /* Timer.cpp */; };
@@ -27,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA30B012202A339F00EC934F /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
+		FA30B013202A339F00EC934F /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		FAB47E3F202B88DE0065BB65 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		FAF8013D2024E79000F5C7C5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF801472024E7A900F5C7C5 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		FAF801482024E7A900F5C7C5 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -52,6 +56,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA30B011202A338900EC934F /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B012202A339F00EC934F /* ArrayTester.cpp */,
+				FA30B013202A339F00EC934F /* ArrayTester.hpp */,
+			);
+			path = Testers;
+			sourceTree = "<group>";
+		};
+		FA30B015202A36D900EC934F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAF801472024E7A900F5C7C5 /* Controller.cpp */,
+				FAF801482024E7A900F5C7C5 /* Controller.hpp */,
+				FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */,
+				FAF8014F2024EB1F00F5C7C5 /* FileController.hpp */,
+				FAF8014D2024E9A000F5C7C5 /* Tools */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAB47E3D202B88C90065BB65 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				FAB47E3F202B88DE0065BB65 /* Node.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		FAF801342024E79000F5C7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +104,10 @@
 		FAF8013F2024E79000F5C7C5 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				FA30B015202A36D900EC934F /* Controller */,
+				FA30B011202A338900EC934F /* Testers */,
 				FAF801592024F78B00F5C7C5 /* Model */,
 				FAF801542024F1F500F5C7C5 /* Data */,
-				FAF8014D2024E9A000F5C7C5 /* Tools */,
 				FAF8015E202506B400F5C7C5 /* Runner.cpp */,
 			);
 			path = DataStructures;
@@ -82,10 +116,6 @@
 		FAF8014D2024E9A000F5C7C5 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				FAF801472024E7A900F5C7C5 /* Controller.cpp */,
-				FAF801482024E7A900F5C7C5 /* Controller.hpp */,
-				FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */,
-				FAF8014F2024EB1F00F5C7C5 /* FileController.hpp */,
 				FAF801512024EDFA00F5C7C5 /* Timer.cpp */,
 				FAF801522024EDFA00F5C7C5 /* Timer.hpp */,
 			);
@@ -105,6 +135,7 @@
 		FAF801592024F78B00F5C7C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FAB47E3D202B88C90065BB65 /* Nodes */,
 				FAF8015A2024F79500F5C7C5 /* Structures */,
 			);
 			path = Model;
@@ -179,6 +210,7 @@
 				FAF8015F202506B400F5C7C5 /* Runner.cpp in Sources */,
 				FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */,
 				FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */,
+				FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */,
 				FAF801532024EDFA00F5C7C5 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

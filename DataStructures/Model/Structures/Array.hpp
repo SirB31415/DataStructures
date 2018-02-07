@@ -55,6 +55,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
         internalArray[index] = toCopy[index];
     }
 }
+//The destructor doesn't get called by you
 template <class Type>
 Array<Type> :: ~Array()
 {
@@ -77,6 +78,18 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
         }
     }
     return *this;
+}
+template <class Type>
+Type & Array<Type> :: operator [] (int index)
+{
+    assert(index >= 0 && index < size);
+    return internalArray[index];
+}
+template <class Type>
+Type Array<Type> :: operator [] (int index) const
+{
+    assert(index >= 0 && index < size);
+    return internalArray[index];
 }
 template <class Type>
 int Array<Type> :: getSize() const

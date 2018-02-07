@@ -14,7 +14,7 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "/Users/pbra1660/Documents/Cplusplus/DataStructures/DataStructures/Data/CrimeData.hpp"
+#include "../Data/CrimeData.hpp"
 using namespace std;
 class FileController
 {
