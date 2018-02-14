@@ -10,8 +10,8 @@
 
 using namespace std;
 
-#ifndef LinearNode_hpp
-#define LinearNode_hpp
+#ifndef LinkedList_hpp
+#define LinkedList_hpp
 
 template <class Type>
 class LinkedList : public List<Type>

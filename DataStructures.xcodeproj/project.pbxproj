@@ -28,7 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA29538C2034D30100040C01 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		FA29538C2034D30100040C01 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		FA30B012202A339F00EC934F /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		FA30B013202A339F00EC934F /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		FA63EDC1202CD59A00350DD8 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			children = (
 				FAF8015C2024F7B000F5C7C5 /* Array.hpp */,
 				FA63EDC4202CE16300350DD8 /* List.hpp */,
-				FA29538C2034D30100040C01 /* LinearNode.hpp */,
+				FA29538C2034D30100040C01 /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
