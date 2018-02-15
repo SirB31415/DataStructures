@@ -32,7 +32,7 @@ public:
     void addAtIndex(int index, Type item);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 
 LinkedList<Type> :: LinkedList()
 {
