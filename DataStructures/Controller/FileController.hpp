@@ -15,11 +15,13 @@
 #include <vector>
 #include <sstream>
 #include "../Data/CrimeData.hpp"
+#include "/Users/pbra1660/Documents/Cplusplus/DataStructures/DataStructures/Model/Structures/LinkedList.hpp"
 using namespace std;
 class FileController
 {
 public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
+    static LinkedList<CrimeData> readdDataToList(string filename);
 };
 
 #endif /* FileController_hpp */

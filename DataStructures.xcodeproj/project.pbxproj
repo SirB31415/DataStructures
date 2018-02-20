@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA23EA58203CAE8A005DB49F /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA23EA56203CAE8A005DB49F /* LinkedListTester.cpp */; };
 		FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA30B012202A339F00EC934F /* ArrayTester.cpp */; };
 		FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801472024E7A900F5C7C5 /* Controller.cpp */; };
 		FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA23EA56203CAE8A005DB49F /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		FA23EA57203CAE8A005DB49F /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		FA29538C2034D30100040C01 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		FA30B012202A339F00EC934F /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		FA30B013202A339F00EC934F /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 			children = (
 				FA30B012202A339F00EC934F /* ArrayTester.cpp */,
 				FA30B013202A339F00EC934F /* ArrayTester.hpp */,
+				FA23EA56203CAE8A005DB49F /* LinkedListTester.cpp */,
+				FA23EA57203CAE8A005DB49F /* LinkedListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				FAF8015F202506B400F5C7C5 /* Runner.cpp in Sources */,
 				FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */,
 				FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */,
+				FA23EA58203CAE8A005DB49F /* LinkedListTester.cpp in Sources */,
 				FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */,
 				FAF801532024EDFA00F5C7C5 /* Timer.cpp in Sources */,
 			);
