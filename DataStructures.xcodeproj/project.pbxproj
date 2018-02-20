@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA23EA55203CA584005DB49F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA23EA53203CA584005DB49F /* main.cpp */; };
 		FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA30B012202A339F00EC934F /* ArrayTester.cpp */; };
 		FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF801472024E7A900F5C7C5 /* Controller.cpp */; };
 		FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA23EA53203CA584005DB49F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FA29538C2034D30100040C01 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		FA30B012202A339F00EC934F /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		FA30B013202A339F00EC934F /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		FA30B015202A36D900EC934F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8015E202506B400F5C7C5 /* Runner.cpp */,
 				FAF801472024E7A900F5C7C5 /* Controller.cpp */,
 				FAF801482024E7A900F5C7C5 /* Controller.hpp */,
 				FAF8014E2024EB1F00F5C7C5 /* FileController.cpp */,
@@ -112,7 +115,7 @@
 				FA30B011202A338900EC934F /* Testers */,
 				FAF801592024F78B00F5C7C5 /* Model */,
 				FAF801542024F1F500F5C7C5 /* Data */,
-				FAF8015E202506B400F5C7C5 /* Runner.cpp */,
+				FA23EA53203CA584005DB49F /* main.cpp */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				FAF8015F202506B400F5C7C5 /* Runner.cpp in Sources */,
 				FAF801492024E7A900F5C7C5 /* Controller.cpp in Sources */,
 				FAF801502024EB1F00F5C7C5 /* FileController.cpp in Sources */,
+				FA23EA55203CA584005DB49F /* main.cpp in Sources */,
 				FA30B014202A339F00EC934F /* ArrayTester.cpp in Sources */,
 				FAF801532024EDFA00F5C7C5 /* Timer.cpp in Sources */,
 			);
