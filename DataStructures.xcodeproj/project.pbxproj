@@ -37,6 +37,7 @@
 		FA63EDC1202CD59A00350DD8 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		FA63EDC4202CE16300350DD8 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		FA93EFCF20472DF1001B414C /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
+		FA93EFD2204732E3001B414C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; path = CircularList.hpp; sourceTree = "<group>"; };
 		FAB47E3F202B88DE0065BB65 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		FAF8013D2024E79000F5C7C5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF801472024E7A900F5C7C5 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -158,6 +159,7 @@
 				FAF8015C2024F7B000F5C7C5 /* Array.hpp */,
 				FA63EDC4202CE16300350DD8 /* List.hpp */,
 				FA29538C2034D30100040C01 /* LinkedList.hpp */,
+				FA93EFD2204732E3001B414C /* CircularList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
