@@ -10,7 +10,7 @@
 #define LinkedListTester_hpp
 
 #include <iostream>
-#include "../Model/Structures/Linear/LinkedList.hpp"
+#include "../Model/Structures/LinkedList.hpp"
 #include "../Controller/FileController.hpp"
 #include "../Controller/Tools/Timer.hpp"
 #include "../Data/CrimeData.hpp"
@@ -21,5 +21,7 @@ public:
     void testListBasics();
     void testListWithData();
 };
+
+
 
 #endif /* LinkedListTester_hpp */

@@ -18,13 +18,12 @@ class LinkedList : public List<Type>
 {
 protected:
     LinearNode<Type> * front;
-    LinearNode<Type> * front;
 public:
     LinkedList();
     
     virtual ~LinkedList();
     
-    intgetSize() const;
+    int getSize() const;
     LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
     
@@ -43,7 +42,7 @@ LinkedList<Type> :: LinkedList()
 }
 
 template <class Type>
-LinkedList<Type> :; ~LinkedList()
+LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
