@@ -12,6 +12,7 @@
 #include <set>
 #include <queue>
 #include <assert.h>
+#include <iostream>
 
 using namespace std;
 template <class Type>
@@ -250,7 +251,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
             if(!visited[*setIterator])
             {
                 visited[*setIterator] = true;
-                cout << curretnGraph[*setIterator] << endl;
+                cout << currentGraph[*setIterator] << endl;
                 vertexQueue.push(*setIterator);
             }
         }
