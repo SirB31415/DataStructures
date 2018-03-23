@@ -16,11 +16,15 @@ void Controller :: start()
     
 //    testArray();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+    
+    GraphTester test;
+    test.testGraphs();
+    
+//    RecursionTester test;
+//    test.testRecursionNumbers();
+//    test.testRecursionString();
 }
-
+/*
 void Controller :: findMaxAndMin()
 {
     Timer searchTimer;
@@ -52,3 +56,4 @@ void Controller :: testArray()
     Array<int> codyArray(45);
     cout << codyArray.getSize() << endl;
 }
+*/

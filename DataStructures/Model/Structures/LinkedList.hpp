@@ -18,6 +18,7 @@ class LinkedList : public List<Type>
 {
 protected:
     LinearNode<Type> * front;
+    LinearNode<Type> * end;
 public:
     LinkedList();
     
@@ -47,13 +48,15 @@ LinkedList<Type> :: ~LinkedList()
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
     {
-        front = destroyStructure->getNextNodde();
+        front = destroyStructure->getNextNode();
         delete destroyStructure;
         destroyStructure = front;
+        
+    }
 }
 
 template <class Type>
-virtual void LinkedList<Type> :: add(Type item)
+void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
         
@@ -74,7 +77,7 @@ virtual void LinkedList<Type> :: add(Type item)
 template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
-    assert(index >= 0 && index <= this->);
+    assert(index >= 0 && index <= this->size);
     if(index == this->size)
     {
         add(item);
@@ -103,6 +106,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 
+template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -115,7 +119,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
         current = current->getNextNode();
     }
     
-    data = current->getNextNode();
+    data = current->getData();
     
     return data;
 }
@@ -140,7 +144,7 @@ Type LinkedList<Type> :: remove(int index)
     {
         for(int position = 0; position < index; position++)
         {
-            previous = curretn;
+            previous = current;
             current = current->getNextNode();
         }
         
@@ -153,12 +157,12 @@ Type LinkedList<Type> :: remove(int index)
         else
         {
             current = toBeRemoved->getNextNode();
-            previous->setNextNoe(current);
+            previous->setNextNode(current);
         }
     }
     this->size-=1;
     
-    removedData = tBeRemoced->getData();
+    removedData = toBeRemoved->getData();
     delete toBeRemoved;
     return removedData;
 }
@@ -170,7 +174,7 @@ LinearNode<Type> * LinkedList<Type> :: getEnd()
 }
 
 template <class Type>
-LinearNode<Type> * LinkedList<Type> :: getEnd()
+LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this-> front;
 }

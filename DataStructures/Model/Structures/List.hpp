@@ -10,6 +10,7 @@
 #define List_hpp
 
 #include <assert.h>
+#include <iostream>
 #include "/Users/pbra1660/Documents/Cplusplus/DataStructures/DataStructures/Model/Nodes/LinearNode.hpp"
 
 template <class Type>
@@ -24,7 +25,7 @@ public:
     virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
     
-    virtual int fetSize() const = 0;
+    virtual int getSize() const = 0;
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
 };

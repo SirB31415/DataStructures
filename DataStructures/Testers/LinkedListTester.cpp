@@ -56,6 +56,6 @@ void LinkedListTester :: testListWithData()
     cout << "The radom index is " << randomLocation << endl;
     double totalViolentRate = crimes.getFromIndex(randomLocation).getAllViolentRates();
     listTimer.stopTimer();
-    cout << "The random crime stat is: " << totalViolentRate << " , and here is the time" >> endl;
+    cout << "The random crime stat is: " << totalViolentRate << " , and here is the time" << endl;
     listTimer.displayInformation();
 }

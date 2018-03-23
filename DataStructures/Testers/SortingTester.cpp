@@ -29,7 +29,7 @@ int SortingTester :: partition(vector<CrimeData> & info, int low, int high)
         if (info[index] < pivotValue)
         {
             smallest++;
-            swap(info, smallest index);
+            swap(info, smallest, index);
         }
     }
     swap(info, smallest + 1, high);
@@ -48,7 +48,7 @@ void SortingTester :: testSorts()
 {
     Timer sortTimer;
     swapCount = 0;
-    vector<CrimeData> data = FileController::readdCrimeDataToBector();
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/pbra1660/Documents/Cplusplus/DataStructures/DataStructures/Data/crime.csv");
     vector<CrimeData> smaller;
     for(int index = 0; index < 10000; index++)
     {
@@ -56,7 +56,7 @@ void SortingTester :: testSorts()
     }
     
     sortTimer.startTimer();
-    quickSort(smaller, 0, smaller.size();
+    quickSort(smaller, 0, smaller.size());
     sortTimer.stopTimer();
     sortTimer.displayInformation();
     cout << "The number of swaps were: " << swapCount << endl;

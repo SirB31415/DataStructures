@@ -15,12 +15,14 @@
 #include "FileController.hpp"
 #include "../Model/Structures/Array.hpp"
 #include "../Testers/RecursionTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 class Controller
 {
 private:
     void testArray();
     void findMaxAndMin();
+    
 public:
     void start();
 };

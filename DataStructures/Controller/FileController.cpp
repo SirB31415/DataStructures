@@ -43,7 +43,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 
 LinkedList<CrimeData> FileController :: readDataToList(string fileName)
 {
-    Linkedlist<CrimeData> crimes;
+    LinkedList<CrimeData> crimes;
     
     string currentCSVLine;
     int rowCount = 0;
@@ -54,7 +54,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
     {
         while(!dataFile.eof())
         {
-            getLine(dataFile, currentCSVLine, '\n');
+            getline(dataFile, currentCSVLine, '\n');
             if(rowCount != 0)
             {
                 if(currentCSVLine.length() != 0)
@@ -73,5 +73,4 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
     }
     
     return crimes;
-}
 }
