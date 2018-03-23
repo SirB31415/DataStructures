@@ -7,6 +7,7 @@
 //
 
 #include "GraphTester.hpp"
+#include <float.h>
 void GraphTester :: setup()
 {
     puzzle.addVertex("a ");
@@ -112,6 +113,29 @@ void GraphTester :: testGraphs()
 
 void GraphTester :: compareTraversals()
 {
-    puzzle.depthFirstTraversal(puzzle,32);
-    puzzle.breadthFirstTraversal(puzzle,32);
+    int traversalMaxCount = -1;
+    double traversalMaxCost = -1;
+    int traversalMinCount = INT_MAX;
+    double traversalMinCost = DBL_MAX;
+    for(int i = 0; i < 34; i++)
+    {
+        if(puzzle.costTraversal(puzzle, i) > traversalMaxCost)
+        {
+            traversalMaxCount = i;
+            traversalMaxCost = puzzle.costTraversal(puzzle, i);
+        }
+        if(puzzle.costTraversal(puzzle, i) < traversalMinCost)
+        {
+            traversalMinCount = i;
+            traversalMinCost = puzzle.costTraversal(puzzle, i);
+        }
+    }
+    cout << "The maximum traversal prints: " << endl;
+    puzzle.breadthFirstTraversal(puzzle, traversalMaxCount);
+    cout << "The maximum traversal count is: " << traversalMaxCount << endl;
+    cout << "The maximum traversal cost is: " << traversalMaxCost << endl;
+    cout << "The minimum traversal prints: " << endl;
+    puzzle.breadthFirstTraversal(puzzle, traversalMinCount);
+    cout << "The minimum traversal count is: " << traversalMinCount << endl;
+    cout << "The minimum traversal cost is: " << traversalMinCost << endl;
 }
