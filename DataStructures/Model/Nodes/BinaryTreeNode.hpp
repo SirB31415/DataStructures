@@ -27,10 +27,8 @@ public:
 private:
     BinaryTreeNode<Type> * root;
     BinaryTreeNode<Type> * left;
-    BinaryTreeNode<Type> * right;
-protected:
-    
-}
+    BinaryTreeNode<Type> * right; 
+};
 
 template<class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : NOde<Type>()
