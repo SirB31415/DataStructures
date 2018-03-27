@@ -11,8 +11,13 @@
 
 #include "Node.hpp"
 
-class BinaryTreeNode
+template <class Type>
+class BinaryTreeNode : public Node<Type>
 {
+private:
+    BinaryTreeNode<Type> * root;
+    BinaryTreeNode<Type> * left;
+    BinaryTreeNode<Type> * right;
 public:
     BinaryTreeNode();
     BinaryTreeNode(Type data);
@@ -21,17 +26,13 @@ public:
     void setRightNode(BinaryTreeNode<Type> * right);
     void setLeftNode(BinaryTreeNode<Type> * left);
     
-    BinaryTreeNode<Type> * getRootNode;
-    BinaryTreeNode<Type> * getRightNode;
-    BinaryTreeNode<Type> * getLeftNode;
-private:
-    BinaryTreeNode<Type> * root;
-    BinaryTreeNode<Type> * left;
-    BinaryTreeNode<Type> * right; 
+    BinaryTreeNode<Type> * getRootNode();
+    BinaryTreeNode<Type> * getRightNode();
+    BinaryTreeNode<Type> * getLeftNode();
 };
 
 template<class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode() : NOde<Type>()
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
     root = nullptr;
     left = nullptr;
